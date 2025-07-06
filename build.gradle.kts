@@ -51,7 +51,9 @@ dependencies {
   modImplementation("net.fabricmc.fabric-api:fabric-api:$fabric_api_version")
   modImplementation("net.fabricmc:fabric-language-kotlin:$fabric_kotlin_version")
 
-  modImplementation("com.simibubi.create:create-fabric-${minecraft_version}:$create_version+mc$minecraft_version")
+  modImplementation("com.simibubi.create:create-fabric-${minecraft_version}:${create_version}")
+  modApi("dev.engine-room.flywheel:flywheel-fabric-api-${minecraft_version}:${flywheel_version}")
+  modImplementation("dev.engine-room.flywheel:flywheel-fabric-${minecraft_version}:${flywheel_version}")
   modImplementation("io.github.fabricators_of_create.Porting-Lib:Porting-Lib:$porting_lib_version")
 
   shadowDep("io.ktor:ktor-server-core-jvm:$ktor_version")
