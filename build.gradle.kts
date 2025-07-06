@@ -22,6 +22,7 @@ val archives_version = "$mod_version+mc$minecraft_version-fabric"
 
 repositories {
   flatDir ( "../libs" )
+  maven("https://maven.createmod.net")
   mavenCentral()
   maven("https://jitpack.io")  // MixinExtras, Fabric ASM
   maven("https://maven.jamieswhiteshirt.com/libs-release")  // Reach Entity Attributes
