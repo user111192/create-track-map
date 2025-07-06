@@ -21,6 +21,7 @@ group = maven_group
 val archives_version = "$mod_version+mc$minecraft_version-fabric"
 
 repositories {
+  flatDir ( "../libs" )
   mavenCentral()
   maven("https://jitpack.io")  // MixinExtras, Fabric ASM
   maven("https://maven.jamieswhiteshirt.com/libs-release")  // Reach Entity Attributes
